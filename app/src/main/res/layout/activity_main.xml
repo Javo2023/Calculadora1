@@ -7,16 +7,18 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textResultado"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="60dp"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -28,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/num2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -37,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
 
     <Button
         android:id="@+id/suma"
@@ -45,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="+"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintStart_toStartOf="@+id/num2"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
 
     <Button
         android:id="@+id/resta"
@@ -55,9 +57,9 @@
         android:layout_marginStart="26dp"
         android:layout_marginTop="56dp"
         android:text="-"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintEnd_toEndOf="@+id/num2"
         app:layout_constraintStart_toEndOf="@+id/suma"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
 
     <Button
         android:id="@+id/multiplicacion"
@@ -83,9 +85,9 @@
         android:id="@+id/imageView4"
         android:layout_width="186dp"
         android:layout_height="152dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calculator_buttons" />
